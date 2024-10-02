@@ -49,12 +49,15 @@ public class AICharacterController : MonoBehaviour
         }
     }
 
-    void CheckPlayerVisibility(){
+    bool CheckPlayerVisibility(){
         RaycastHit hit;
         if(Physics.Raycast(transform.position, playerTransform.position - transform.position, out hit, 10f)){
             if(hit.collider.CompareTag("Player")){
-                
+                if(Vector3.Angle(transform.forward, playerTransform.position - transform.position) < 45){
+                    return true;
+                }
             }
         }
+        return false;
     }
 }
