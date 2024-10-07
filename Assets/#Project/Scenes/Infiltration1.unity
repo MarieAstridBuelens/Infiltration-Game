@@ -1691,6 +1691,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8311198ed920bca4dba3ca89d995dddc, type: 3}
+--- !u!1 &1104046790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+  m_PrefabInstance: {fileID: 1136506292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1123239238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,13 +1856,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1224537674}
   m_SourcePrefab: {fileID: 100100000, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
 --- !u!4 &1224537667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
   m_PrefabInstance: {fileID: 1136506292}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1224537674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104046790}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.8, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1256623382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2713,7 +2742,7 @@ PrefabInstance:
       objectReference: {fileID: 1224537667}
     - target: {fileID: 6092440345444233986, guid: c22f8cba94ad22e4bade581e4bafe343, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.61
+      value: -8.96
       objectReference: {fileID: 0}
     - target: {fileID: 6092440345444233986, guid: c22f8cba94ad22e4bade581e4bafe343, type: 3}
       propertyPath: m_LocalPosition.y
