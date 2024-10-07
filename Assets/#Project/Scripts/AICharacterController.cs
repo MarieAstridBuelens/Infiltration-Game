@@ -15,7 +15,7 @@ public class AICharacterController : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     public Transform waypointsGroup;//on passe le transform parent de tous les waypoints
 
-    private Transform currentWaypoint;
+    [Tooltip("Put the parent Transform of all the waypoints you want the character to visit here")] public Transform currentWaypoint;
 
     public enum AIControllerState{
         Patrol,
@@ -24,6 +24,8 @@ public class AICharacterController : MonoBehaviour
 
     public AIControllerState state;
     private bool visiblePlayer = false;
+
+    [SerializeField, Space(10), Header("Dev tools")] private bool debug;
 
     // Start is called before the first frame update
     void Start()
@@ -76,11 +78,11 @@ public class AICharacterController : MonoBehaviour
 
     bool CheckPlayerVisibility(){
         RaycastHit hit;
-        Debug.DrawRay(transform.position, transform.forward * 10f);
+        if (debug) Debug.DrawRay(transform.position, transform.forward * 10f);
         if(Physics.Raycast(transform.position, playerTransform.position - transform.position, out hit, 10f)){
             if(hit.collider.CompareTag("Player")){
                 if(Vector3.Angle(transform.forward, playerTransform.position - transform.position) < 45){
-                    Debug.Log("Vu !");
+                    if (debug) Debug.Log("Vu !");
                     return true;
                 }
             }
