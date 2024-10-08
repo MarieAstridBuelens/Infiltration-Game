@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 7005721957659418358}
   - component: {fileID: 8374531090294318174}
   - component: {fileID: 363659591497195778}
+  - component: {fileID: 791769945721714058}
   m_Layer: 0
   m_Name: Vision Cone
   m_TagString: Untagged
@@ -326,6 +327,19 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!114 &791769945721714058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804269293055563874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0702eafa76d4540ab9d76bad65b62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 8374531090294318174}
 --- !u!1 &8567851160074730611
 GameObject:
   m_ObjectHideFlags: 0

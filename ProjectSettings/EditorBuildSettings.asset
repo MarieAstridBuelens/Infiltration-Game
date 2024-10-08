@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/#Project/Scenes/Launch Screen.unity
+    guid: 3a44578893fce8d41aab5844cff454d8
+  - enabled: 1
     path: Assets/#Project/Scenes/Infiltration1.unity
     guid: 899abe65bb6184b42992c6d58c60b979
   - enabled: 1
     path: Assets/#Project/Scenes/Win Screen.unity
     guid: 9fdf288b7703d914da2e0fe8849784d6
+  - enabled: 1
+    path: Assets/#Project/Scenes/Defeat Screen.unity
+    guid: b44d64d343a206f4e9124ae204fbab33
   m_configObjects: {}

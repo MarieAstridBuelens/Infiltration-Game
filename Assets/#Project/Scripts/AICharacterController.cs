@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 //script qui prend le transform du player. Chaque ennemi connaît
 //la position du player quand il en aura besoin
@@ -23,7 +25,7 @@ public class AICharacterController : MonoBehaviour
     }
 
     public AIControllerState state;
-    private bool visiblePlayer = false;
+    public static bool visiblePlayer = false;
 
     [SerializeField, Space(10), Header("Dev tools")] private bool debug;
 
@@ -73,6 +75,9 @@ public class AICharacterController : MonoBehaviour
         if(other.transform == currentWaypoint){
             currentWaypoint = SelectDestination();
             navMeshAgent.SetDestination(currentWaypoint.position);
+        }
+        if (other.CompareTag("Player")){
+            SceneManager.LoadScene("Defeat Screen");
         }
     }
 
