@@ -100,6 +100,9 @@ public class MazeGenerator : MonoBehaviour
                 //3.1.2. Add the neighboring walls of the cell to the wall list
                 AddNeighbouringWallsToList(wall);
             }
+
+            //3.2. Remove the wall from the list
+            walls.Remove(wall);
         }
     }
 }
