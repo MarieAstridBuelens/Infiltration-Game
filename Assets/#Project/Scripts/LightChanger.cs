@@ -11,12 +11,12 @@ public class LightChanger : MonoBehaviour
         light = GetComponent<Light>();
     }
     void Update(){
-        if(AICharacterController.visiblePlayer){
-            light.color = Color.red;
-        }
-        else{
-            light.color = Color.green;
-        }
+        // if(AICharacterController.visiblePlayer){
+        //     light.color = Color.red;
+        // }
+        // else{
+        //     light.color = Color.green;
+        // }
     }
     
     

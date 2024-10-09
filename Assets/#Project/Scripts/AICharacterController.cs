@@ -25,7 +25,7 @@ public class AICharacterController : MonoBehaviour
     }
 
     public AIControllerState state;
-    public static bool visiblePlayer = false;
+    public bool visiblePlayer = false;
 
     [SerializeField, Space(10), Header("Dev tools")] private bool debug;
 
